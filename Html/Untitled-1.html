@@ -1,0 +1,1080 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic information about the HTML document -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page fit mobile, tablet, and desktop screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Text shown in the browser tab -->
+    <title>Findora | Platform Moderator</title>
+
+    <!-- HTML structure only for now. CSS will be added later. -->
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- 1. HEADER                            -->
+    <!-- ===================================== -->
+
+    <header>
+        <h1>FINDORA</h1>
+        <p>Lost and Found Platform</p>
+
+        <p>
+            Platform Moderator / Administrator
+        </p>
+
+        <nav aria-label="Main navigation">
+            <a href="#dashboard">Dashboard</a> |
+            <a href="#users">Manage Users</a> |
+            <a href="#roles">Manage Roles</a> |
+            <a href="#listings">Review Listings</a> |
+            <a href="#reports">Complaints</a> |
+            <a href="#applications">Staff Applications</a> |
+            <a href="#claims">Claim Disputes</a> |
+            <a href="#categories">Categories</a> |
+            <a href="#settings">Settings</a> |
+            <a href="#logs">Activity Logs</a> |
+            <a href="#analytics">Analytics</a>
+        </nav>
+
+        <hr>
+    </header>
+
+
+    <!-- ===================================== -->
+    <!-- 2. MAIN CONTENT                       -->
+    <!-- ===================================== -->
+
+    <main>
+
+        <!-- ================================= -->
+        <!-- 3. DASHBOARD OVERVIEW              -->
+        <!-- ================================= -->
+
+        <section id="dashboard">
+
+            <h2>Platform Dashboard</h2>
+
+            <p>
+                Welcome to Findora's Platform Moderator Dashboard.
+                Manage users, review listings, investigate complaints,
+                and maintain the platform.
+            </p>
+
+            <h3>Platform Statistics</h3>
+
+            <!-- These are sample numbers for the HTML prototype. -->
+            <ul>
+                <li>Total Registered Users: 250</li>
+                <li>Pending Staff Applications: 5</li>
+                <li>Listings Awaiting Review: 8</li>
+                <li>Open Complaints: 4</li>
+                <li>Unresolved Claim Disputes: 2</li>
+                <li>Items Successfully Returned: 76</li>
+            </ul>
+
+            <h3>Quick Actions</h3>
+
+            <ul>
+                <li><a href="#users">Review User Accounts</a></li>
+                <li><a href="#listings">Review Listings</a></li>
+                <li><a href="#applications">Review Staff Applications</a></li>
+                <li><a href="#reports">Investigate Complaints</a></li>
+                <li><a href="#claims">Review Claim Disputes</a></li>
+            </ul>
+
+            <h3>Recent Platform Activity</h3>
+
+            <table border="1">
+                <caption>Sample Recent Activities</caption>
+
+                <thead>
+                    <tr>
+                        <th>Activity ID</th>
+                        <th>Activity</th>
+                        <th>Record</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>ACT-001</td>
+                        <td>New Officer Application</td>
+                        <td>APP-001</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>ACT-002</td>
+                        <td>Listing Reported</td>
+                        <td>FND-014</td>
+                        <td>Under Review</td>
+                    </tr>
+
+                    <tr>
+                        <td>ACT-003</td>
+                        <td>Ownership Dispute</td>
+                        <td>CLM-008</td>
+                        <td>Open</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- 4. USER MANAGEMENT                 -->
+        <!-- ================================= -->
+
+        <section id="users">
+
+            <h2>User Management</h2>
+
+            <p>
+                View registered users, check account status,
+                and manage accounts according to platform rules.
+            </p>
+
+            <!-- Search form: visual structure only at this stage. -->
+            <form action="#" method="get">
+
+                <label for="user-search">
+                    Search by name, email, or user ID:
+                </label>
+
+                <input
+                    type="search"
+                    id="user-search"
+                    name="user-search"
+                    placeholder="Enter a search term">
+
+                <button type="submit">Search</button>
+
+            </form>
+
+            <br>
+
+            <label for="user-role-filter">Filter by role:</label>
+
+            <select id="user-role-filter" name="user-role-filter">
+                <option value="all">All Roles</option>
+                <option value="owner">Item Owner</option>
+                <option value="finder">Finder</option>
+                <option value="officer">Lost &amp; Found Officer</option>
+                <option value="moderator">Platform Moderator</option>
+            </select>
+
+            <label for="user-status-filter">Filter by status:</label>
+
+            <select id="user-status-filter" name="user-status-filter">
+                <option value="all">All Statuses</option>
+                <option value="active">Active</option>
+                <option value="pending">Pending</option>
+                <option value="suspended">Suspended</option>
+            </select>
+
+            <h3>Registered Users</h3>
+
+            <table border="1">
+                <caption>Sample User Accounts</caption>
+
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Email</th>
+                        <th>Account Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>USR-001</td>
+                        <td>Rahim Ahmed</td>
+                        <td>Item Owner</td>
+                        <td>rahim@example.com</td>
+                        <td>Active</td>
+                        <td>
+                            <a href="#user-details">View</a>
+                            <button type="button">Suspend</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>USR-002</td>
+                        <td>Karim Hasan</td>
+                        <td>Finder</td>
+                        <td>karim@example.com</td>
+                        <td>Active</td>
+                        <td>
+                            <a href="#user-details">View</a>
+                            <button type="button">Suspend</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>USR-003</td>
+                        <td>Sample Officer</td>
+                        <td>Officer</td>
+                        <td>officer@example.com</td>
+                        <td>Pending</td>
+                        <td>
+                            <a href="#applications">Review Application</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 id="user-details">User Details</h3>
+
+            <p>
+                In the functional version, this area can show the
+                selected user's profile, account history, and
+                permitted management actions.
+            </p>
+
+            <p>
+                Any suspension or restriction should require an
+                appropriate reason and confirmation.
+            </p>
+
+        </section>
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- 5. ROLE AND PERMISSION MANAGEMENT  -->
+        <!-- ================================= -->
+
+        <section id="roles">
+
+            <h2>Role and Permission Management</h2>
+
+            <p>
+                Manage the roles assigned to users. Never grant
+                moderator access merely because someone requests it.
+            </p>
+
+            <table border="1">
+                <caption>Findora Roles and Responsibilities</caption>
+
+                <thead>
+                    <tr>
+                        <th>Role</th>
+                        <th>Main Permissions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Item Owner</td>
+                        <td>Report lost items, search listings, submit claims</td>
+                    </tr>
+
+                    <tr>
+                        <td>Finder</td>
+                        <td>Report found items, review appropriate claims</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lost &amp; Found Officer</td>
+                        <td>Manage assigned organization inventory and handovers</td>
+                    </tr>
+
+                    <tr>
+                        <td>Platform Moderator</td>
+                        <td>Manage platform accounts, review content, approve authorized staff, manage settings</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Assign a Role</h3>
+
+            <form action="#" method="post">
+
+                <label for="role-user-id">User ID:</label>
+                <input
+                    type="text"
+                    id="role-user-id"
+                    name="user-id"
+                    placeholder="Example: USR-001"
+                    required>
+
+                <br><br>
+
+                <label for="new-role">Select Role:</label>
+
+                <select id="new-role" name="new-role" required>
+                    <option value="">Choose a role</option>
+                    <option value="owner">Item Owner</option>
+                    <option value="finder">Finder</option>
+                    <option value="officer">Lost &amp; Found Officer</option>
+                    <option value="moderator">Platform Moderator</option>
+                </select>
+
+                <br><br>
+
+                <label for="role-reason">Reason for Change:</label>
+
+                <textarea
+                    id="role-reason"
+                    name="role-reason"
+                    rows="3"
+                    cols="40"
+                    placeholder="Explain why this role change is needed"
+                    required></textarea>
+
+                <br><br>
+
+                <button type="submit">Submit Role Change</button>
+
+            </form>
+
+            <p>
+                Role changes must be validated by the backend.
+                The first moderator should be created through a
+                trusted setup process.
+            </p>
+
+        </section>
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- 6. LISTING MANAGEMENT               -->
+        <!-- ================================= -->
+
+        <section id="listings">
+
+            <h2>Review Item Listings</h2>
+
+            <p>
+                Review suspicious, misleading, duplicate, or
+                privacy-violating lost-and-found listings.
+            </p>
+
+            <table border="1">
+                <caption>Sample Item Listings</caption>
+
+                <thead>
+                    <tr>
+                        <th>Listing ID</th>
+                        <th>Item Name</th>
+                        <th>Reported By</th>
+                        <th>Listing Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>FND-014</td>
+                        <td>Black Backpack</td>
+                        <td>USR-002</td>
+                        <td>Under Review</td>
+                        <td>
+                            <button type="button">View</button>
+                            <button type="button">Restrict</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>FND-015</td>
+                        <td>Mobile Phone</td>
+                        <td>USR-006</td>
+                        <td>Published</td>
+                        <td>
+                            <button type="button">View</button>
+                            <button type="button">Flag</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>LST-021</td>
+                        <td>Student Wallet</td>
+                        <td>USR-001</td>
+                        <td>Published</td>
+                        <td>
+                            <button type="button">View</button>
+                            <button type="button">Flag</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Record a Listing Decision</h3>
+
+            <form action="#" method="post">
+
+                <label for="listing-id">Listing ID:</label>
+                <input
+                    type="text"
+                    id="listing-id"
+                    name="listing-id"
+                    required>
+
+                <br><br>
+
+                <label for="listing-decision">Decision:</label>
+
+                <select
+                    id="listing-decision"
+                    name="listing-decision"
+                    required>
+
+                    <option value="">Select Decision</option>
+                    <option value="keep">Keep Published</option>
+                    <option value="restrict">Restrict Listing</option>
+                    <option value="remove">Remove Listing</option>
+                </select>
+
+                <br><br>
+
+                <label for="listing-reason">Reason:</label>
+
+                <textarea
+                    id="listing-reason"
+                    name="listing-reason"
+                    rows="3"
+                    cols="40"
+                    required></textarea>
+
+                <br><br>
+
+                <button type="submit">Submit Decision</button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- 7. REPORTED CONTENT AND COMPLAINTS  -->
+        <!-- ================================= -->
+
+        <section id="reports">
+
+            <h2>Reports and Complaints</h2>
+
+            <p>
+                Investigate complaints about fake listings,
+                suspicious claims, harassment, or privacy violations.
+            </p>
+
+            <table border="1">
+                <caption>Sample Complaint Records</caption>
+
+                <thead>
+                    <tr>
+                        <th>Report ID</th>
+                        <th>Reported Record</th>
+                        <th>Reason</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>RPT-001</td>
+                        <td>FND-014</td>
+                        <td>Suspicious Listing</td>
+                        <td>New</td>
+                        <td>
+                            <button type="button">Investigate</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>RPT-002</td>
+                        <td>USR-006</td>
+                        <td>Repeated False Claims</td>
+                        <td>Under Review</td>
+                        <td>
+                            <button type="button">Review</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Update Complaint Status</h3>
+
+            <form action="#" method="post">
+
+                <label for="report-id">Report ID:</label>
+                <input
+                    type="text"
+                    id="report-id"
+                    name="report-id"
+                    required>
+
+                <br><br>
+
+                <label for="report-status">New Status:</label>
+
+                <select
+                    id="report-status"
+                    name="report-status"
+                    required>
+
+                    <option value="">Select Status</option>
+                    <option value="review">Under Review</option>
+                    <option value="action">Action Taken</option>
+                    <option value="dismissed">Dismissed</option>
+                    <option value="escalated">Escalated</option>
+                </select>
+
+                <br><br>
+
+                <label for="report-notes">Review Notes:</label>
+
+                <textarea
+                    id="report-notes"
+                    name="report-notes"
+                    rows="3"
+                    cols="40"
+                    required></textarea>
+
+                <br><br>
+
+                <button type="submit">Update Report</button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- 8. STAFF APPLICATION MANAGEMENT    -->
+        <!-- ================================= -->
+
+        <section id="applications">
+
+            <h2>Staff Applications</h2>
+
+            <p>
+                Review applications from Lost &amp; Found Officers
+                and requests for Moderator access.
+            </p>
+
+            <table border="1">
+                <caption>Sample Staff Applications</caption>
+
+                <thead>
+                    <tr>
+                        <th>Application ID</th>
+                        <th>Applicant</th>
+                        <th>Requested Role</th>
+                        <th>Organization / Reference</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>APP-001</td>
+                        <td>Sample Applicant A</td>
+                        <td>Officer</td>
+                        <td>Example University</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>APP-002</td>
+                        <td>Sample Applicant B</td>
+                        <td>Moderator</td>
+                        <td>Staff Reference 1002</td>
+                        <td>Under Review</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Review an Application</h3>
+
+            <form action="#" method="post">
+
+                <label for="application-id">Application ID:</label>
+
+                <input
+                    type="text"
+                    id="application-id"
+                    name="application-id"
+                    required>
+
+                <br><br>
+
+                <label for="application-decision">Decision:</label>
+
+                <select
+                    id="application-decision"
+                    name="application-decision"
+                    required>
+
+                    <option value="">Select Decision</option>
+                    <option value="approved">Approve</option>
+                    <option value="rejected">Reject</option>
+                    <option value="more-info">Request More Information</option>
+                </select>
+
+                <br><br>
+
+                <label for="application-notes">Review Notes:</label>
+
+                <textarea
+                    id="application-notes"
+                    name="application-notes"
+                    rows="3"
+                    cols="40"
+                    required></textarea>
+
+                <br><br>
+
+                <button type="submit">Submit Review</button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- 9. CLAIM DISPUTE MANAGEMENT        -->
+        <!-- ================================= -->
+
+        <section id="claims">
+
+            <h2>Claim Disputes</h2>
+
+            <p>
+                Review ownership claims that have been escalated
+                because ownership is unclear or disputed.
+            </p>
+
+            <table border="1">
+                <caption>Sample Claim Disputes</caption>
+
+                <thead>
+                    <tr>
+                        <th>Claim ID</th>
+                        <th>Item ID</th>
+                        <th>Reason</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>CLM-008</td>
+                        <td>FND-014</td>
+                        <td>Multiple Claimants</td>
+                        <td>Open</td>
+                        <td>
+                            <button type="button">Review</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>CLM-009</td>
+                        <td>FND-020</td>
+                        <td>Ownership Evidence Unclear</td>
+                        <td>Escalated</td>
+                        <td>
+                            <button type="button">Review</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Record a Dispute Review</h3>
+
+            <form action="#" method="post">
+
+                <label for="claim-id">Claim ID:</label>
+
+                <input
+                    type="text"
+                    id="claim-id"
+                    name="claim-id"
+                    required>
+
+                <br><br>
+
+                <label for="claim-action">Next Action:</label>
+
+                <select
+                    id="claim-action"
+                    name="claim-action"
+                    required>
+
+                    <option value="">Select Action</option>
+                    <option value="investigate">Continue Investigation</option>
+                    <option value="officer">Refer to Officer</option>
+                    <option value="resolved">Mark Case Resolved</option>
+                    <option value="closed">Close Case</option>
+                </select>
+
+                <br><br>
+
+                <label for="claim-notes">Review Notes:</label>
+
+                <textarea
+                    id="claim-notes"
+                    name="claim-notes"
+                    rows="3"
+                    cols="40"
+                    required></textarea>
+
+                <br><br>
+
+                <button type="submit">Record Review</button>
+
+            </form>
+
+            <p>
+                Do not hand over an item solely because a Moderator
+                has access to the dashboard. Ownership must be
+                verified through the appropriate process.
+            </p>
+
+        </section>
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- 10. ITEM CATEGORY MANAGEMENT      -->
+        <!-- ================================= -->
+
+        <section id="categories">
+
+            <h2>Manage Item Categories</h2>
+
+            <p>
+                Maintain the categories used when users report
+                lost or found belongings.
+            </p>
+
+            <ul>
+                <li>Electronics</li>
+                <li>Bags and Backpacks</li>
+                <li>Keys</li>
+                <li>Documents and ID Cards</li>
+                <li>Clothing</li>
+                <li>Jewelry and Accessories</li>
+                <li>Books and Stationery</li>
+                <li>Other</li>
+            </ul>
+
+            <h3>Add a Category</h3>
+
+            <form action="#" method="post">
+
+                <label for="category-name">Category Name:</label>
+
+                <input
+                    type="text"
+                    id="category-name"
+                    name="category-name"
+                    placeholder="Enter category name"
+                    required>
+
+                <br><br>
+
+                <label for="category-description">Description:</label>
+
+                <textarea
+                    id="category-description"
+                    name="category-description"
+                    rows="3"
+                    cols="40"></textarea>
+
+                <br><br>
+
+                <button type="submit">Add Category</button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- 11. PLATFORM SETTINGS             -->
+        <!-- ================================= -->
+
+        <section id="settings">
+
+            <h2>Platform Settings</h2>
+
+            <p>
+                Manage general information and basic operational
+                policies for Findora.
+            </p>
+
+            <form action="#" method="post">
+
+                <h3>General Information</h3>
+
+                <label for="platform-name">Platform Name:</label>
+
+                <input
+                    type="text"
+                    id="platform-name"
+                    name="platform-name"
+                    value="Findora"
+                    required>
+
+                <br><br>
+
+                <label for="platform-description">Description:</label>
+
+                <textarea
+                    id="platform-description"
+                    name="platform-description"
+                    rows="3"
+                    cols="40">A platform for reporting lost and found belongings.</textarea>
+
+                <br><br>
+
+                <label for="support-email">Support Email:</label>
+
+                <input
+                    type="email"
+                    id="support-email"
+                    name="support-email"
+                    placeholder="support@example.com"
+                    required>
+
+                <h3>Listing Policy</h3>
+
+                <label for="listing-policy">
+                    Basic Listing Requirements:
+                </label>
+
+                <textarea
+                    id="listing-policy"
+                    name="listing-policy"
+                    rows="4"
+                    cols="40"
+                    required>Listings must be accurate and must not expose private information.</textarea>
+
+                <h3>Account Policy</h3>
+
+                <label for="account-policy">
+                    Account and Staff Approval Rules:
+                </label>
+
+                <textarea
+                    id="account-policy"
+                    name="account-policy"
+                    rows="4"
+                    cols="40"
+                    required>Officer and Moderator access requires authorized approval.</textarea>
+
+                <br><br>
+
+                <button type="submit">Save Settings</button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- 12. ACTIVITY LOGS                 -->
+        <!-- ================================= -->
+
+        <section id="logs">
+
+            <h2>Activity and Audit Logs</h2>
+
+            <p>
+                Review the history of important administrative
+                and moderation actions.
+            </p>
+
+            <table border="1">
+                <caption>Sample Activity Log</caption>
+
+                <thead>
+                    <tr>
+                        <th>Log ID</th>
+                        <th>Date</th>
+                        <th>Staff Member</th>
+                        <th>Action</th>
+                        <th>Record ID</th>
+                        <th>Reason</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>LOG-001</td>
+                        <td>2026-10-01</td>
+                        <td>MOD-001</td>
+                        <td>Listing Restricted</td>
+                        <td>FND-014</td>
+                        <td>Privacy review</td>
+                    </tr>
+
+                    <tr>
+                        <td>LOG-002</td>
+                        <td>2026-10-02</td>
+                        <td>MOD-001</td>
+                        <td>Officer Application Approved</td>
+                        <td>APP-001</td>
+                        <td>Application verified</td>
+                    </tr>
+
+                    <tr>
+                        <td>LOG-003</td>
+                        <td>2026-10-03</td>
+                        <td>MOD-001</td>
+                        <td>Category Added</td>
+                        <td>CAT-009</td>
+                        <td>New item category</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                In the real application, the backend must generate
+                and protect audit records so ordinary users cannot
+                alter the history.
+            </p>
+
+        </section>
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- 13. REPORTS AND ANALYTICS         -->
+        <!-- ================================= -->
+
+        <section id="analytics">
+
+            <h2>Reports and Analytics</h2>
+
+            <p>
+                Review platform activity and the success of
+                lost-item recovery.
+            </p>
+
+            <form action="#" method="get">
+
+                <label for="analytics-start">Start Date:</label>
+
+                <input
+                    type="date"
+                    id="analytics-start"
+                    name="start-date">
+
+                <label for="analytics-end">End Date:</label>
+
+                <input
+                    type="date"
+                    id="analytics-end"
+                    name="end-date">
+
+                <button type="submit">Apply Date Range</button>
+
+            </form>
+
+            <h3>Sample Performance Statistics</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Sample Value</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lost Items Reported</td>
+                        <td>120</td>
+                        <td>Number of lost-item reports</td>
+                    </tr>
+
+                    <tr>
+                        <td>Found Items Reported</td>
+                        <td>100</td>
+                        <td>Number of found-item reports</td>
+                    </tr>
+
+                    <tr>
+                        <td>Items Returned</td>
+                        <td>76</td>
+                        <td>Recorded successful recoveries</td>
+                    </tr>
+
+                    <tr>
+                        <td>Open Claims</td>
+                        <td>12</td>
+                        <td>Claims that are not yet completed</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                These values are examples only. Real statistics
+                must be calculated from stored application data.
+            </p>
+
+            <button type="button">Export Report</button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ===================================== -->
+    <!-- 14. FOOTER                            -->
+    <!-- ===================================== -->
+
+    <footer>
+
+        <hr>
+
+        <p>Findora — Lost and Found Platform</p>
+
+        <nav aria-label="Footer navigation">
+            <a href="#dashboard">Back to Dashboard</a> |
+            <a href="#settings">Platform Settings</a>
+        </nav>
+
+        <p>
+            &copy; 2026 Findora. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

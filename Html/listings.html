@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listings and Complaints | Findora</title>
+</head>
+<body>
+
+<header>
+    <h1>FINDORA</h1>
+    <p>Lost and Found Platform</p>
+    <details>
+        <summary>Menu</summary>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="users.html">Manage Users</a></li>
+                <li><a href="listings.html">Review Listings and Complaints</a></li>
+                <li><a href="claims.html">Claim Disputes</a></li>
+                <li><a href="applications.html">Staff Applications</a></li>
+                <li><a href="categories.html">Categories and Settings</a></li>
+                <li><a href="reports.html">Reports, Analytics and Logs</a></li>
+            </ul>
+        </nav>
+    </details>
+</header>
+
+<main>
+    <h2>Listing and Complaint Management</h2>
+    <p>
+        Review suspicious listings, duplicate posts, privacy violations,
+        and complaints submitted by Findora users.
+    </p>
+
+    <section>
+        <h3>Search and Filter Reports</h3>
+        <form action="#" method="get">
+            <label for="report-search">Report or Listing ID:</label>
+            <input type="search" id="report-search" name="report-search"
+                   placeholder="e.g. RPT-012 or FND-017">
+
+            <label for="report-type">Report Type:</label>
+            <select id="report-type" name="report-type">
+                <option value="all">All Types</option>
+                <option value="fake">Fake Listing</option>
+                <option value="duplicate">Duplicate Listing</option>
+                <option value="privacy">Privacy Violation</option>
+                <option value="fraud">Suspected Fraud</option>
+                <option value="harassment">Harassment</option>
+                <option value="not-returned">Item Not Returned</option>
+            </select>
+
+            <label for="report-status">Status:</label>
+            <select id="report-status" name="report-status">
+                <option value="all">All Statuses</option>
+                <option value="new">New</option>
+                <option value="review">Under Review</option>
+                <option value="resolved">Resolved</option>
+                <option value="dismissed">Dismissed</option>
+                <option value="escalated">Escalated</option>
+            </select>
+
+            <button type="submit">Search Reports</button>
+        </form>
+    </section>
+
+    <section>
+        <h3>Reported Listings and Complaints</h3>
+        <table border="1">
+            <caption>Sample Reports</caption>
+            <thead>
+                <tr>
+                    <th>Report ID</th>
+                    <th>Listing ID</th>
+                    <th>Complaint</th>
+                    <th>Reported By</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>RPT-012</td>
+                    <td>FND-017</td>
+                    <td>Possible Duplicate</td>
+                    <td>USR-102</td>
+                    <td>Under Review</td>
+                    <td><a href="#review-report">Review</a></td>
+                </tr>
+                <tr>
+                    <td>RPT-013</td>
+                    <td>LST-021</td>
+                    <td>Personal Information Exposed</td>
+                    <td>USR-101</td>
+                    <td>New</td>
+                    <td><a href="#review-report">Review</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="review-report">
+        <h3>Review a Listing or Complaint</h3>
+        <form action="#" method="post">
+            <label for="review-report-id">Report ID:</label>
+            <input type="text" id="review-report-id" name="review-report-id"
+                   placeholder="e.g. RPT-012" required>
+
+            <label for="review-listing-id">Related Listing ID:</label>
+            <input type="text" id="review-listing-id" name="review-listing-id"
+                   placeholder="e.g. FND-017">
+
+            <label for="review-decision">Decision:</label>
+            <select id="review-decision" name="review-decision" required>
+                <option value="">Choose a decision</option>
+                <option value="keep">Keep Listing</option>
+                <option value="correction">Request Correction</option>
+                <option value="restrict">Restrict Listing</option>
+                <option value="remove">Remove Listing</option>
+                <option value="dismiss">Dismiss Report</option>
+                <option value="escalate">Escalate Complaint</option>
+            </select>
+
+            <label for="review-notes">Reason and Review Notes:</label>
+            <textarea id="review-notes" name="review-notes"
+                      required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <hr>
+    <p>Findora - Lost and Found Platform</p>
+    <a href="dashboard.html">Back to Dashboard</a> |
+    <a href="claims.html">Claim Disputes</a>
+    <p>&copy; 2026 Findora. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

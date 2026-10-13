@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+</head>
+<body>
+    <header>
+    <h1>FINDORA</h1>
+    <p>Lost and Found Platform</p>
+    <details>
+        <summary>Menu</summary>
+        <label>     
+                <nav>
+                    <ul>
+                    <li><a href="users.html">Manage Users</a></li>
+                    <li><a href="roles.html">Manage Roles</a></li>
+                    <li><a href="listings.html">Review Listings</a></li>
+                    <li><a href="reports.html">Complaints</a></li>
+                    <li><a href="applications.html">Staff Applications</a></li>
+                    <li><a href="claims.html">Claim Disputes</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="logs.html">Activity Logs</a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
+                </ul>
+            </nav>
+    </label>
+     </details>
+    </header>
+
+    <h2>User Management</h2>
+
+            <p>
+                View registered users, check account status,
+                and manage accounts according to platform rules.
+            </p>
+<form action="#" method="get">
+<label for="user-search">Search by username, email or user ID</label>
+<input type="search" id="user-search" name="user-search" placeholder="Enter a search term">
+<button type="submit" >Search</button>
+
+</form>
+<br>
+<label for="user-role-filter">Filter by role:</label>
+<select id ="user-role-filter" name="user-role-filter">
+   <option value="all">All Roles</option>
+   <option value="item-owner">Item Owner</option>
+   <option value="finder">Finder</option>
+   <option value="office-staff">Lost & Found Officer</option>
+   <option value="moderator">Moderator</option>
+</select>
+    <label for="user-status-filter">Filter by status:</label>
+        <select id="user-status-filter" name="user-status-filter">
+                <option value="all">All Statuses</option>
+                <option value="active">Active</option>
+                <option value="pending">Pending</option>
+                <option value="suspended">Suspended</option>
+ </select>
+<br>
+<h3>Registered Users</h3>
+<table border="1">
+    <caption>Sample Registered Users</caption>
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Example user rows -->
+        <tr>
+            <td>1</td>
+            <td>john_doe</td>
+            <td>Item Owner</td>
+            <td>john@example.com</td>
+            <td>Active</td>
+            <td>
+                <a href="User-details">View</a>
+                <button type="button">Suspend</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Sujon</td>
+            <td>Finder</td>
+            <td>sUjohn@example.com</td>
+            <td>Active</td>
+            <td>
+                <a href="User-details">View</a>
+                <button type="button">Suspend</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>john</td>
+            <td>Officer</td>
+            <td>john@example.com</td>
+            <td>Pending</td>
+            <td>
+                <a href="Review">Review Application</a>
+            </td>
+        </tr>
+        </tbody>
+        </table>
+        
+         <h3 id="user-details">User Details</h3>
+
+            <p>
+                In the functional version, this area can show the
+                selected user's profile, account history, and
+                permitted management actions.
+            </p>
+
+            <p>
+                Any suspension or restriction should require an
+                appropriate reason and confirmation.
+            </p>
+
+
+<!-- Footer -->
+<footer>
+    <hr>
+    <p>Findora -- Lost and Found Platform</p>
+    <a href="Platform_manager.html">Back to Dashboard</a> |
+    <a href="settings.html">PlatformSettings</a> |
+    <p>&copy; 2026 Findora. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

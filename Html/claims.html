@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Disputes | Findora</title>
+</head>
+<body>
+
+<header>
+    <h1>FINDORA</h1>
+    <p>Lost and Found Platform</p>
+    <details>
+        <summary>Menu</summary>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="users.html">Manage Users</a></li>
+                <li><a href="listings.html">Review Listings and Complaints</a></li>
+                <li><a href="claims.html">Claim Disputes</a></li>
+                <li><a href="applications.html">Staff Applications</a></li>
+                <li><a href="categories.html">Categories and Settings</a></li>
+                <li><a href="reports.html">Reports, Analytics and Logs</a></li>
+            </ul>
+        </nav>
+    </details>
+</header>
+
+<main>
+    <h2>Claim Dispute Management</h2>
+    <p>
+        Review disputed ownership claims and investigate cases
+        escalated by Finders or Lost and Found Officers.
+    </p>
+
+    <section>
+        <h3>Escalated Claims</h3>
+        <table border="1">
+            <caption>Sample Claim Disputes</caption>
+            <thead>
+                <tr>
+                    <th>Claim ID</th>
+                    <th>Item ID</th>
+                    <th>Claimant ID</th>
+                    <th>Dispute Type</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CLM-004</td>
+                    <td>FND-017</td>
+                    <td>USR-101</td>
+                    <td>Conflicting Ownership Claims</td>
+                    <td>Escalated</td>
+                    <td><a href="#dispute-review">Review</a></td>
+                </tr>
+                <tr>
+                    <td>CLM-005</td>
+                    <td>FND-019</td>
+                    <td>USR-102</td>
+                    <td>Insufficient Evidence</td>
+                    <td>Under Review</td>
+                    <td><a href="#dispute-review">Review</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="dispute-review">
+        <h3>Investigate a Dispute</h3>
+        <form action="#" method="post">
+            <label for="claim-id">Claim ID:</label>
+            <input type="text" id="claim-id" name="claim-id"
+                   placeholder="e.g. CLM-004" required>
+
+            <label for="item-id">Related Item ID:</label>
+            <input type="text" id="item-id" name="item-id"
+                   placeholder="e.g. FND-017" required>
+
+            <label for="dispute-type">Dispute Type:</label>
+            <select id="dispute-type" name="dispute-type" required>
+                <option value="">Choose dispute type</option>
+                <option value="conflicting">Conflicting Ownership Claims</option>
+                <option value="evidence">Insufficient Evidence</option>
+                <option value="fraud">Suspected Fraud</option>
+                <option value="handover">Handover Disagreement</option>
+                <option value="appeal">Appeal of Officer Decision</option>
+            </select>
+
+            <label for="dispute-notes">Investigation Notes:</label>
+            <textarea id="dispute-notes" name="dispute-notes"
+                      required></textarea>
+
+            <label for="dispute-decision">Next Step:</label>
+            <select id="dispute-decision" name="dispute-decision" required>
+                <option value="">Choose next step</option>
+                <option value="officer">Refer to Lost and Found Officer</option>
+                <option value="evidence">Request Additional Evidence</option>
+                <option value="senior">Refer to Senior Moderator</option>
+                <option value="close">Close Complaint</option>
+            </select>
+
+            <label for="decision-reason">Reason for Decision:</label>
+            <textarea id="decision-reason" name="decision-reason"
+                      required></textarea>
+
+            <button type="submit">Record Investigation</button>
+        </form>
+    </section>
+
+    <section>
+        <h3>Dispute Handling Rules</h3>
+        <ul>
+            <li>Protect claimants' private information and evidence.</li>
+            <li>Record the reason for every decision.</li>
+            <li>Refer physical item verification to an authorized Officer when appropriate.</li>
+            <li>Do not mark an item returned until the handover is confirmed.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <hr>
+    <p>Findora - Lost and Found Platform</p>
+    <a href="dashboard.html">Back to Dashboard</a> |
+    <a href="listings.html">Listings and Complaints</a>
+    <p>&copy; 2026 Findora. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
